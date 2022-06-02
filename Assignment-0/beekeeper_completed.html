@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Beekeeper Completed</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="beekeeper.css">
+
+    <script>
+        var queryString = decodeURIComponent(window.location.search);
+        queryString = queryString.substring(1);
+        var queries = queryString.split("&");
+        
+        for (var i = 0; i < queries.length; i++){
+           queries[i] = queries[i].substring(queries[i].indexOf("=") + 1);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <h2>Welcome to Beekeeper</h2>
+        <img src="bees.png">
+        <p>Hello, <script>document.write(queries[0]) </script></p>
+        <p>You're new account information is in the below table</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email Address</th>
+                    <th>Birthday</th>
+                    <th>Password</th>
+                    <th>Account Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><script>document.write(queries[0]) </script></td>
+                    <td><script>document.write(queries[1]) </script></td>
+                    <td><script>document.write(queries[2]) </script></td>
+                    <td><script>document.write(queries[3]) </script></td>
+                    <td><script>document.write(queries[5]) </script></td>
+                </tr>
+            </tbody>
+
+        </table>
+</body>
+</html>

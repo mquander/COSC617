@@ -1,0 +1,64 @@
+h2 {
+  color: #ff9900;
+  text-align: center;
+}
+
+h2,
+h3,
+form {
+  text-align: center;
+}
+
+table th {
+  font-weight: bold;
+  height: 65px;
+}
+
+table {
+  width: 75%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table td {
+  height: 50px;
+}
+
+#content {
+  width: 800px;
+  margin: auto;
+}
+
+p {
+  /*width: 600px;
+    margin: auto;*/
+  text-align: center;
+}
+
+input {
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+#submit {
+  width: 10em;
+  height: 2em;
+  padding: 5px;
+}
+
+img {
+  /* image from https://www.smithsonianmag.com/smart-news/commercial-hives-might-be-saving-crops-theyre-killing-wild-bees-180953934/ */
+  display: block;
+  max-width: 20%;
+  margin: auto;
+}
+a:hover {
+  color: #ff9900;
+}
